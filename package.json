@@ -6,8 +6,6 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
     "test": "nyc mocha --timeout 1000000 -r ts-node/register test/**/*.spec.ts --exit",
-
-
     "generate-lcov": "nyc report --reporter=text-lcov > lcov.info"
   },
   "repository": {
