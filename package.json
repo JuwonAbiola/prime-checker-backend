@@ -4,7 +4,9 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "start": "tsc && node dist/src/index.js",
+    "tsc": "tsc",
+    "postinstall": "npm run tsc",
+    "start": "node dist/src/index.js",
     "start:dev": "DEBUG=dev ts-node-dev src/index.ts",
     "test": "nyc mocha --timeout 1000 -r ts-node/register test/**/*.spec.ts --exit",
     "generate-lcov": "nyc report --reporter=text-lcov > lcov.info"
