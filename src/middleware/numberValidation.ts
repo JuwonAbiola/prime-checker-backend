@@ -13,7 +13,7 @@ import {
  */
 const validateNumber = (req: Request, res: Response, next: NextFunction): any => {
     const number = req.params['number'];
-    if (!number || !parseInt(number) || parseInt(number) < 2) {
+    if (!number || !parseInt(number) || parseInt(number) < 3) {
         return serverResponse(res, 400, {
             status: 'error',
             message: 'Please supply a positive number greater than 2 ',
