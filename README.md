@@ -3,6 +3,10 @@
 A simple prime checker system that allows users to get the highest prime number lower than a certain number.
 ---
 
+## UI
+
+- [Prime Checker ✔️ frontend](https://prime-checker-frontend.herokuapp.com/) 
+
 ## Requirements
 
 For development, you will only need Node.js and a node global package installed in your environement.
@@ -76,4 +80,10 @@ Run the tests
 
 - [Express](http://expressjs.com/) - Web framework
 - [dotenv](https://github.com/motdotla/dotenv) - Loads environment variables from .env for nodejs projects.
+
+## Documentation
+
+- [Postman Collection](https://documenter.getpostman.com/view/5053486/TzRX7Q4y )
+
+
 
