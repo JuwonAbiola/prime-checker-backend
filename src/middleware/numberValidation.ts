@@ -16,7 +16,7 @@ const validateNumber = (req: Request, res: Response, next: NextFunction): any =>
     if (!number || !parseInt(number) || parseInt(number) < 2) {
         return serverResponse(res, 400, {
             status: 'error',
-            message: 'Please supply a positive number greater than 2 as query param ',
+            message: 'Please supply a positive number greater than 2 ',
             data: null
         })
     }
