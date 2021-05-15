@@ -4,7 +4,6 @@
  * @returns {boolean} JSON response with status and response information
  */
 const isPrimeNumber = (digit: number): boolean => {
-    if (digit === 1) return false;
     for (let x = 2; x < digit; x++) {
         if (digit % x === 0) {
             return false;
