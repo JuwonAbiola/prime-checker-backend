@@ -40,7 +40,7 @@ describe('CONTROLLER TEST', () => {
                 .request(server)
                 .get(`/api/v1/prime/naruto`);
             expect(response).to.have.status(400);
-            expect(response.body.message).to.equal('Please supply a positive number greater than 2 as query param ');
+            expect(response.body.message).to.equal('Please supply a positive number greater than 2 ');
         });
 
     });
