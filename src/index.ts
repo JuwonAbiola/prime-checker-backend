@@ -6,6 +6,7 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import Debug from 'debug';
+import routes from './routes';
 
 dotenv.config();
 
@@ -29,10 +30,11 @@ app.use(express.json());
 /**
  * Routes Activation
  */
+
 app.get('/', (_, res) => {
     res.status(200).send('Welcome to Prime Checker');
 });
-
+app.use(routes);
 
 app.listen(PORT, () => debug(`Server started on port ${PORT}`));
 
