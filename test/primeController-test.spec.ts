@@ -25,11 +25,11 @@ describe('CONTROLLER TEST', () => {
     });
 
     context('when a user passes 1', () => {
-        it("its expected to return a succes response", async () => {
+        it("its expected to return an error response", async () => {
             const response = await chai
                 .request(server)
                 .get(`/api/v1/prime/1`);
-            expect(response).to.have.status(200);
+            expect(response).to.have.status(400);
         });
 
     });
@@ -40,7 +40,7 @@ describe('CONTROLLER TEST', () => {
                 .request(server)
                 .get(`/api/v1/prime/naruto`);
             expect(response).to.have.status(400);
-            expect(response.body.message).to.equal('Please supply a number as query param ');
+            expect(response.body.message).to.equal('Please supply a positive number greater than 2 as query param ');
         });
 
     });
